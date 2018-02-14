@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: minio
-  namespace: gitlab
+  namespace: jenkins
 spec:
   replicas: 1
   template:

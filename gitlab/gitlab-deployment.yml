@@ -124,5 +124,8 @@ spec:
           initialDelaySeconds: 15
           timeoutSeconds: 1
       volumes:
-      - name: data
-        emptyDir: {}
+      - gcePersistentDisk:
+          fsType: ext4
+          partition: 1
+          pdName: gitlab-data
+        name: data
